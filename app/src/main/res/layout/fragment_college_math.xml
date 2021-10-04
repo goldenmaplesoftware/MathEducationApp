@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CollegeMath">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/collegeMathDescriptionID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginDescription"
+        android:layout_marginStart="@dimen/marginDescription"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/collegeMath"
+        android:textAlignment="center"
+        android:textSize="@dimen/textSizeTitle"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/collegeMathDescription2ID"
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+        android:layout_margin="@dimen/marginDescription"
+        android:layout_marginStart="@dimen/marginDescription"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="50sp"
+        android:text="@string/descriptionCollegeMath"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/textSizeDescription2"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/imageDescriptionCollege"
+        android:src="@drawable/collegemath" />
+
+
+
+</FrameLayout>

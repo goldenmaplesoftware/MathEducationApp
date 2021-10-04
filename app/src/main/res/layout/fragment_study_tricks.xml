@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ViewPager.StudyTricksFragment">
+
+<!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/studyTrickTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:text="@string/hello_blank_fragment"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:text="@string/studyTrickTitle" />
+
+    <TextView
+        android:id="@+id/studyTrickDescription"
+        android:layout_width="match_parent"
+        android:layout_height="292dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:text="@string/studyTrickDescription"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/studyTrickImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="100dp"
+        android:contentDescription="@string/imageplaceholder" />
+
+
+</FrameLayout>

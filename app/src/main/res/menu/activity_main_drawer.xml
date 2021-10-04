@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_derivative"
+            android:icon="@drawable/ic_calculus_book_svgrepo_com"
+            android:title="@string/derivative_calculus" />
+        <item
+            android:id="@+id/nav_integral"
+            android:icon="@drawable/ic_double_integral_svgrepo_com"
+            android:title="@string/integral_calculus" />
+
+        <item
+            android:id="@+id/nav_linearAlgebra"
+            android:icon="@drawable/ic_research_matrix_svgrepo_com"
+            android:title="@string/linear_algebra" />
+
+        <item
+            android:id="@+id/nav_vectorCalculus"
+            android:icon="@drawable/ic_vector_nodes_svgrepo_com"
+            android:title="@string/vector_calculus" />
+
+        <item
+            android:id="@+id/nav_differentialEquations"
+            android:icon="@drawable/ic_equation_svgrepo_com"
+            android:title="@string/differentail_equations" />
+        <item
+            android:id="@+id/nav_studyTricks"
+            android:icon="@drawable/ic_baseline_thumb_up_24"
+            android:title="@string/study_habits" />
+        <item
+            android:id="@+id/nav_contactDeveloperFragment"
+            android:icon="@drawable/ic_baseline_contact_page_24"
+            android:title="Contact Developer"/>
+
+
+    </group>
+</menu>

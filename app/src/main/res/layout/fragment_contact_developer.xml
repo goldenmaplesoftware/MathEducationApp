@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contact.ContactDeveloperFragment"
+    android:orientation="vertical"
+    tools:ignore="UseCompoundDrawables">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/contactDev_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/contact_developer"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="347dp"
+        android:paddingTop="20sp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/image_of_diffeqn"
+        android:src="@drawable/wearingatowel" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/mapButton"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:layout_marginStart="2sp"
+            android:layout_marginLeft="2sp"
+            android:layout_marginTop="2sp"
+            android:layout_marginEnd="2sp"
+            android:layout_marginRight="2sp"
+            android:layout_marginBottom="2sp"
+            android:layout_weight="1"
+            android:paddingLeft="10sp"
+            android:paddingTop="10sp"
+            android:paddingRight="10sp"
+            android:paddingBottom="10sp"
+            android:text="@string/mapTitle" />
+
+        <Button
+            android:id="@+id/buttonEmail"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:layout_marginStart="2sp"
+            android:layout_marginLeft="2sp"
+            android:layout_marginTop="2sp"
+            android:layout_marginEnd="2sp"
+            android:layout_marginRight="2sp"
+            android:layout_marginBottom="2sp"
+            android:layout_weight="1"
+            android:paddingLeft="10sp"
+            android:paddingTop="10sp"
+            android:paddingRight="10sp"
+            android:paddingBottom="10sp"
+            android:text="Email Developer" />
+
+        <Button
+            android:id="@+id/buttonCall"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:layout_marginStart="2sp"
+            android:layout_marginLeft="2sp"
+            android:layout_marginTop="2sp"
+            android:layout_marginEnd="2sp"
+            android:layout_marginRight="2sp"
+            android:layout_marginBottom="2sp"
+            android:layout_weight="1"
+            android:paddingLeft="10sp"
+            android:paddingTop="10sp"
+            android:paddingRight="10sp"
+            android:paddingBottom="10sp"
+            android:text="Give An Phone Call To Developer" />
+
+        <Button
+            android:id="@+id/buttonSMS"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:layout_marginStart="2sp"
+            android:layout_marginLeft="2sp"
+            android:layout_marginTop="2sp"
+            android:layout_marginEnd="2sp"
+            android:layout_marginRight="2sp"
+            android:layout_marginBottom="2sp"
+            android:layout_weight="1"
+            android:paddingLeft="10sp"
+            android:paddingTop="10sp"
+            android:paddingRight="10sp"
+            android:paddingBottom="10sp"
+            android:text="SMS/Text Message Developer" />
+
+        <Button
+            android:id="@+id/buttonCustomIntent"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:layout_marginStart="2sp"
+            android:layout_marginLeft="2sp"
+            android:layout_marginTop="2sp"
+            android:layout_marginEnd="2sp"
+            android:layout_marginRight="2sp"
+            android:layout_marginBottom="2sp"
+            android:layout_weight="1"
+            android:paddingLeft="10sp"
+            android:paddingTop="10sp"
+            android:paddingRight="10sp"
+            android:paddingBottom="10sp"
+            android:text="Developers Website" />
+    </LinearLayout>
+
+</LinearLayout>

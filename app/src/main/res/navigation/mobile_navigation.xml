@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_contactDeveloperFragment">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.lab4.CollegeMath"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_college_math" />
+
+    <fragment
+        android:id="@+id/nav_derivative"
+        android:name="com.example.lab4.DifferentialCalculusFragment"
+        android:label="@string/derivative_calculus"
+        tools:layout="@layout/fragment_differential_calculus" />
+
+    <fragment
+        android:id="@+id/nav_integral"
+        android:name="com.example.lab4.IntegralCalculusFragment"
+        android:label="@string/integral_calculus"
+        tools:layout="@layout/fragment_integral_calculus" />
+
+    <fragment
+        android:id="@+id/nav_linearAlgebra"
+        android:name="com.example.lab4.LinearAlgebraFragment"
+        android:label="@string/linear_algebra"
+        tools:layout="@layout/fragment_linear_algebra" />
+
+    <fragment
+        android:id="@+id/nav_vectorCalculus"
+        android:name="com.example.lab4.VectorCalculusFragment"
+        android:label="@string/vector_calculus"
+        tools:layout="@layout/fragment_vector_calculus" />
+
+
+    <fragment
+        android:id="@+id/nav_differentialEquations"
+        android:name="com.example.lab4.DifferentialEquationsFragment"
+        android:label="@string/differentail_equations"
+        tools:layout="@layout/fragment_differential_calculus" />
+    <fragment
+        android:id="@+id/nav_studyTricks"
+        android:name="com.example.lab4.ViewPager.InformationFragment"
+        android:label="Study Habits"
+        tools:layout="@layout/fragment_study_tricks" />
+    <fragment
+        android:id="@+id/nav_contactDeveloperFragment"
+        android:name="com.example.lab4.Contact.ContactDeveloperFragment"
+        android:label="Contact Developer"
+        tools:layout="@layout/fragment_contact_developer" />
+
+
+</navigation>

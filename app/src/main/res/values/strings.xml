@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Lab4</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="integral_calculus">Integral Calculus</string>
+    <string name="derivative_calculus">Differential Calculus</string>
+    <string name="linear_algebra">Linear Algebra</string>
+    <string name="vector_calculus">Vector Calculus</string>
+    <string name="differentail_equations">Differential Equations</string>
+    <string name="home">College Math</string>
+    <string name="college_level_mathematics_tutorials">College Level Mathematics Tutorials</string>
+    <string name="jean_comtois82_stclairconnect_ca">jean.comtois82@stclairconnect.ca</string>
+    <string name="collegeMath">"College Mathematics "</string>
+    <string name="descriptionCollegeMath">Welcome to the educational module that is designed to give a run down on college mathematics.  Mathematics is a facinating and wonderful mode of study, you can do anything with math.  From being able to analyze patterns, identify trends, and even predict outcomes. </string>
+    <string name="collegeMathContent">This is the image for college math</string>
+    <string name="imageDescriptionCollege">generic math wallpaper</string>
+    <string name="imageDerivative">Derivative image</string>
+    <string name="derivative_calculus_description">Orignally founded by Sir Issac Newton,  this is the study of rates of change.  Applicable among being able to determine motion kinematics/dynamics.</string>
+    <string name="integral_calculus_description">Leibniz found another way to anaylize rates of change,  but did the opposite to Newton.   This is primarily the study of finding areas of curves/complex trajectories.  Good in being able to measure complex dimensions.</string>
+    <string name="image_of_linear_algebra">image of linear algebra</string>
+    <string name="linear_algebra_description">Grassman founded this mode of study,  it analyzes linear maps. Mainly utilized to determine outcomes of probabalistic sets. Utilized heavily in computer science and quantum mechanics.</string>
+    <string name="image_of_multivariable">Multivariable calculus image</string>
+    <string name="vector_description">Study of differentiation and integration in 3 dimensional euclidean space.  Think of it as calculus with a twist!</string>
+    <string name="image_of_diffeqn">differential equation image</string>
+    <string name="differentail_equations_description">An expansion of the calculus concepts applied to higher order functional sets.  Primarly used in modes of study involving molecular dynamics or having to model physical quantites more accurately.</string>
+    <string name="studyTrickTitle">30sp</string>
+    <string name="studyTrickDescription" />
+    <string name="imageplaceholder">imageplaceholder</string>
+    <string name="study_habits">Study Habits</string>
+    <string name="contact_developer">Contact Developer</string>
+    <string name="mapTitle">Map</string>
+
+</resources>
