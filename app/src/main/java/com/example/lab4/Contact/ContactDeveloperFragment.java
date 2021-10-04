@@ -1,5 +1,6 @@
 package com.example.lab4.Contact;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
@@ -82,12 +83,16 @@ public class ContactDeveloperFragment extends Fragment {
                         .setCustomAnimations(R.anim.animate_in_down,R.anim.animate_out_down,R.anim.animate_back_in_down,R.anim.animation_back_out_down)
                         .replace(R.id.content,new AndroidDeveloper()).addToBackStack(null).commit();
                 */
-                Uri geoLocation=Uri.parse("geo:0,0?q-42.417374,-83.638754(App Developer Location)"); ///This is St.Clair by default TODO CHANGE
                 Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.setData(geoLocation);
+                intent.setData(Uri.parse("geo:42.2465,-83.0191"));
+                Intent chooser=Intent.createChooser(intent,"Launch Map");
+                startActivity(chooser);
+
+                /* Permissions for the application,  works when prompted
                 if(intent.resolveActivity(requireActivity().getPackageManager())!=null)
                 {
-                    startActivity(intent);
+
+                    startActivity(chooser);
                 }
 
                 else
@@ -95,7 +100,7 @@ public class ContactDeveloperFragment extends Fragment {
                         Snackbar snackbar=Snackbar.make(requireActivity().findViewById(android.R.id.content),"You need to download Google Maps to view this, please download it!",Snackbar.LENGTH_SHORT);
                         snackbar.show();
                     }
-
+            */
             }
         });
 
@@ -103,25 +108,33 @@ public class ContactDeveloperFragment extends Fragment {
         Button button2=view.findViewById(R.id.buttonEmail); ///Android button
         button2.setOnClickListener(new View.OnClickListener()  ///Makes the button active
         {
+            @SuppressLint("QueryPermissionsNeeded")
             @Override
             public void onClick(View v)
             {
-                String[] emailAddress={"jean.comtois82@stclairconnect.ca"};
+                String[] emailAddress={"fakeemail@fakedomain.ca"};
                 Intent intent=new Intent(Intent.ACTION_SENDTO);
                 intent.setData(Uri.parse("mailto:"));
                 intent.putExtra(Intent.EXTRA_EMAIL,emailAddress);
                 intent.putExtra(Intent.EXTRA_SUBJECT,"Hello, please can you help me with an issue with your education application");
+                Intent chooser=Intent.createChooser(intent,"Launch Email");
+                startActivity(chooser);
 
-                if(intent.resolveActivity(getActivity().getPackageManager())!=null)
+                /* Permissions for the application,  works when prompted
+                if(intent.resolveActivity(requireActivity().getPackageManager())!=null)
                 {
-                    startActivity(intent);
+
+                    startActivity(chooser);
                 }
 
                 else
-                {
-                    Snackbar snackbar=Snackbar.make(getActivity().findViewById(android.R.id.content),"You need to configure email permissions!",Snackbar.LENGTH_SHORT);
-                    snackbar.show();
-                }
+                    {
+                        Snackbar snackbar=Snackbar.make(requireActivity().findViewById(android.R.id.content),"You need to download Google Maps to view this, please download it!",Snackbar.LENGTH_SHORT);
+                        snackbar.show();
+                    }
+            */
+
+
 
             }
 
@@ -135,18 +148,24 @@ public class ContactDeveloperFragment extends Fragment {
             public void onClick(View v)
             {
                 Intent intent = new Intent(Intent.ACTION_SENDTO);
-                intent.setData(Uri.parse("smsto:5199446802"));
+                intent.setData(Uri.parse("smsto:5555555555"));
                 intent.putExtra("sms_body","Hello Golden Maple,\n");
-                if (intent.resolveActivity(getActivity().getPackageManager())!=null)
+                Intent chooser=Intent.createChooser(intent,"Launch SMS");
+                startActivity(chooser);
+
+                /* Permissions for the application,  works when prompted
+                if(intent.resolveActivity(requireActivity().getPackageManager())!=null)
                 {
-                    startActivity(intent);
+
+                    startActivity(chooser);
                 }
 
                 else
-                {
-                    Snackbar snackbar=Snackbar.make(getActivity().findViewById(android.R.id.content),"Configure your mobile permissions to send a message through text!",Snackbar.LENGTH_SHORT);
-                    snackbar.show();
-                }
+                    {
+                        Snackbar snackbar=Snackbar.make(requireActivity().findViewById(android.R.id.content),"You need to download Google Maps to view this, please download it!",Snackbar.LENGTH_SHORT);
+                        snackbar.show();
+                    }
+            */
 
             }
         });
@@ -154,21 +173,28 @@ public class ContactDeveloperFragment extends Fragment {
         Button button4=view.findViewById(R.id.buttonCall); ///Android button
         button4.setOnClickListener(new View.OnClickListener()  ///Makes the button active
         {
+            @SuppressLint("QueryPermissionsNeeded")
             @Override
             public void onClick(View v)
             {
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:" + 9446802));
-                if (intent.resolveActivity(getActivity().getPackageManager())!=null)
+                intent.setData(Uri.parse("tel:" + 555555));
+                Intent chooser=Intent.createChooser(intent,"Launch Phone");
+                startActivity(chooser);
+
+                /* Permissions for the application,  works when prompted
+                if(intent.resolveActivity(requireActivity().getPackageManager())!=null)
                 {
-                    startActivity(intent);
+
+                    startActivity(chooser);
                 }
 
                 else
-                {
-                    Snackbar snackbar=Snackbar.make(getActivity().findViewById(android.R.id.content),"Configure your mobile permissions to send a message through autodial!",Snackbar.LENGTH_SHORT);
-                    snackbar.show();
-                }
+                    {
+                        Snackbar snackbar=Snackbar.make(requireActivity().findViewById(android.R.id.content),"You need to download Google Maps to view this, please download it!",Snackbar.LENGTH_SHORT);
+                        snackbar.show();
+                    }
+            */
             }
 
 
@@ -181,18 +207,24 @@ public class ContactDeveloperFragment extends Fragment {
             @Override
             public void onClick(View v)
             {
-            Uri webpage=Uri.parse("goldenmaplesoftware.ca");
-                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-                if (intent.resolveActivity(getActivity().getPackageManager())!=null)
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://goldenmaplesoftware.ca"));  ///Must have https:// prefacing web address or the action will not be recognized
+                Intent chooser=Intent.createChooser(intent,"Launch Developer Website");
+                startActivity(chooser);
+
+                /* Permissions for the application,  works when prompted
+                if(intent.resolveActivity(requireActivity().getPackageManager())!=null)
                 {
-                    startActivity(intent);
+
+                    startActivity(chooser);
                 }
 
                 else
-                {
-                    Snackbar snackbar=Snackbar.make(getActivity().findViewById(android.R.id.content),"Configure your browser permissions to access the website!",Snackbar.LENGTH_SHORT);
-                    snackbar.show();
-                }
+                    {
+                        Snackbar snackbar=Snackbar.make(requireActivity().findViewById(android.R.id.content),"You need to download Google Maps to view this, please download it!",Snackbar.LENGTH_SHORT);
+                        snackbar.show();
+                    }
+            */
 
 
             }
